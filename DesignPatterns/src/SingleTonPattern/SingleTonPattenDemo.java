@@ -1,11 +1,9 @@
 package SingleTonPattern;
 
 public class SingleTonPattenDemo {
-
 	public static void main(String[] args) {
-		SingleObject object = SingleObject.getInstance();
-		object.showMessage();
-
+		SingleTonObject object1 = SingleTonObject.getInstance("SingleTon");
+		System.out.println(object1.value);
+		object1.myMethod();
 	}
-
 }
